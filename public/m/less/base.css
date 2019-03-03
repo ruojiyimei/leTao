@@ -1,0 +1,86 @@
+html {
+  font-size: 26.66667vw;
+}
+body {
+  font-size: .14rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+#header {
+  display: flex;
+  background-color: #006699;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#header .left,
+#header .right {
+  height: .45rem;
+  width: .45rem;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+}
+#header .center h4 {
+  line-height: .45rem;
+  font-weight: 500;
+}
+#header .right {
+  text-align: center;
+  line-height: .45rem;
+}
+/* 中间的主体区域的样式 这个每个页面都要放到公共样式中 */
+#main {
+  padding: .45rem 0;
+  height: 100vh;
+  position: relative;
+}
+#main .mui-scroll-wrapper {
+  position: relative;
+  height: 100%;
+}
+#main .swiper-container {
+  height: 100%;
+}
+#main .swiper-container .swiper-slide {
+  height: auto;
+}
+#main a {
+  display: block;
+}
+#main a img {
+  width: 100%;
+}
+#footer {
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#footer a {
+  height: .45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#footer a span {
+  line-height: .14rem;
+}
+#footer a.active {
+  color: orange;
+}

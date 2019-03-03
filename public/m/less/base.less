@@ -1,0 +1,125 @@
+//公共样式
+// 1. 定义一些公共变量
+@main-color: #006699;
+
+//2.样式初始化
+html {
+    font-size: 26.66667vw;
+}
+
+body {
+    font-size: .14rem;
+}
+
+// 去掉标题默认间距
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// 去除图片和块级元素3px间隙
+img {
+    vertical-align: middle;
+}
+
+//3.公共样式----头部 底部公共样式
+#header {
+    display: flex;
+    background-color: @main-color;
+    color: #fff;
+
+    // 滚动条所需要添加/修改的属性
+    position: fixed;
+    top: 0;
+    left: 0;
+    // 固定定位默认了没有100%的宽度
+    width: 100%;
+
+
+    .left,
+    .right {
+        height: .45rem;
+        width: .45rem;
+    }
+
+    .center {
+        flex: 1;
+        text-align: center;
+
+        h4 {
+            line-height: .45rem;
+            font-weight: 500;
+        }
+    }
+
+    .right {
+        text-align: center;
+        line-height: .45rem;
+    }
+}
+
+
+/* 中间的主体区域的样式 这个每个页面都要放到公共样式中 */
+#main {
+    // 滚动条所需要添加/修改的属性
+    padding: .45rem 0;
+    height: 100vh;
+    position: relative;
+
+    .mui-scroll-wrapper {
+        // 把默认的定位改为相对定位
+        position: relative;
+        // 把这个区域滚动的盒子高度设置为100%和main的内容一样
+        height: 100%;
+    }
+
+    // swiper的内容滚动样式修改 给父容器高度固定100% 子容器高度auto
+    .swiper-container {
+        height: 100%;
+
+        // 子容器的高度 为auto
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    // 主体大部分里面的a标签都是转成块级元素并且a里面的img也大多是宽100%
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#footer {
+    background-color: @main-color;
+    // 滚动条所需要添加/修改的属性
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    // 固定定位默认了没有100%的宽度
+    width: 100%;
+
+    a {
+        height: .45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        span {
+            line-height: .14rem;
+        }
+
+        &.active {
+            color: orange;
+        }
+    }
+}
