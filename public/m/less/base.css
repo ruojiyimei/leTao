@@ -29,6 +29,15 @@ img {
   height: .45rem;
   width: .45rem;
 }
+#header .left a,
+#header .right a {
+  color: #fff;
+}
+#header .left a {
+  display: block;
+  text-align: center;
+  line-height: .45rem;
+}
 #header .center {
   flex: 1;
   text-align: center;
@@ -36,6 +45,17 @@ img {
 #header .center h4 {
   line-height: .45rem;
   font-weight: 500;
+}
+#header .center form {
+  padding-top: .05rem;
+}
+#header .center form input {
+  background-color: #fff;
+  height: .35rem;
+  margin-bottom: 0;
+  color: #000;
+  text-align: left;
+  font-size: .14rem;
 }
 #header .right {
   text-align: center;

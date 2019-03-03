@@ -1,0 +1,51 @@
+@import 'base.less';
+
+// 搜索页面的主体样式
+#main{
+    background-color: #fff;
+
+    // 搜索表格样式
+    .search-form{
+        padding: .1rem;
+        form{
+            display: flex;
+            input{
+                flex:1;
+                height: .36rem;
+                background-color: #fff;
+                border: .01rem solid @main-color;
+                text-align: left;
+                font-size: .14rem;
+                border-radius: .06rem 0  0 .06rem;
+                margin-bottom: 0;
+            }
+            button{
+                width: .6rem;
+                height: .36rem;
+                background-color: @main-color;
+                border-color: @main-color;
+                border-radius: 0 .06rem .06rem 0;
+                margin-bottom: 0; 
+            }
+        }
+    }
+
+    // 搜索历史样式
+    .search-history{
+
+        .mui-card-header {
+            span {
+                font-size: .14rem;
+            }
+
+            a {
+                font-size: .14rem;
+                color: #666;
+            }
+
+            .mui-table-view-cell:after {
+                left: 0;
+            }
+        }
+    }
+}

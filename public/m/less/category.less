@@ -1,12 +1,39 @@
 @import 'base.less';
 
-#main{
+// 分页主体内容
+#main {
     background-color: #ccc;
     display: flex;
-    .category-left{
+
+    .category-left {
         width: .8rem;
+
+        ul {
+            li {
+                &.active {
+                    background-color: #ccc;
+                }
+            }
+
+            .mui-table-view-cell:after {
+                left: 0;
+            }
+        }
     }
-    .category-right{
+
+    .category-right {
         flex: 1;
+        padding: .1rem;
+
+        a {
+            display: block;
+            text-align: center;
+            background-color: #fff;
+
+            img {
+                width: 100%;
+                height: .5rem;
+            }
+        }
     }
 }
