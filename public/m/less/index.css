@@ -1,0 +1,23 @@
+@import 'base.css';
+#main .nav {
+  padding: .1rem;
+}
+#main .banner {
+  padding: 10px;
+}
+#main .banner .left a {
+  display: flex;
+}
+#main .banner .left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#main .banner .right a img {
+  height: 2.4rem;
+}
+#main .brand,
+#main .sport,
+#main .women,
+#main .men {
+  padding: .1rem;
+}
