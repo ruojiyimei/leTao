@@ -128,15 +128,64 @@ img {
   margin-bottom: 0;
 }
 #main {
-  background-color: #fff;
+  padding-bottom: .9rem;
 }
-#main .search-history .mui-card-header span {
-  font-size: .14rem;
+#main .cart-list li a {
+  display: flex;
 }
-#main .search-history .mui-card-header a {
-  font-size: .14rem;
+#main .cart-list li a .left {
+  width: .8rem;
+  text-align: center;
+  position: relative;
+}
+#main .cart-list li a .left img {
+  width: 100%;
+  display: block;
+}
+#main .cart-list li a .left .mui-checkbox {
+  position: static;
+}
+#main .cart-list li a .left .mui-checkbox input {
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+  bottom: .1rem;
+}
+#main .cart-list li a .left .mui-checkbox input::before {
+  color: hotpink;
+}
+#main .cart-list li a .right {
+  flex: 1;
+  line-height: .24rem;
+}
+#main .cart-list li a .right .product-name {
   color: #666;
 }
-#main .search-history .mui-card-header .mui-table-view-cell:after {
-  left: 0;
+#main .cart-list li a .right .product-price {
+  color: #666;
+}
+#main .cart-list li a .right .product-price span {
+  color: red;
+  font-weight: 600;
+}
+#main .cart-list li a .right .product-params {
+  display: flex;
+  justify-content: space-between;
+}
+#main .cart-list li a:not(.mui-btn) {
+  white-space: normal;
+}
+#order {
+  position: fixed;
+  bottom: .45rem;
+  height: .45rem;
+  width: 100%;
+  line-height: .4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .05rem;
+  background-color: #fff;
+}
+#order .order-count {
+  color: red;
 }

@@ -127,16 +127,31 @@ img {
   border-radius: 0 .06rem .06rem 0;
   margin-bottom: 0;
 }
-#main {
-  background-color: #fff;
-}
-#main .search-history .mui-card-header span {
-  font-size: .14rem;
-}
-#main .search-history .mui-card-header a {
+#main .product-list .mui-card-header a {
   font-size: .14rem;
   color: #666;
+  text-align: center;
 }
-#main .search-history .mui-card-header .mui-table-view-cell:after {
-  left: 0;
+#main .product-list .mui-card-header a.active {
+  color: red;
+}
+#main .product-list .mui-card-content .mui-col-xs-6 {
+  box-shadow: 0 1px 0 #ccc;
+}
+#main .product-list .mui-card-content .mui-col-xs-6:nth-child(odd) {
+  box-shadow: 1px 1px 0 #ccc;
+}
+#main .product-list .mui-card-content .product {
+  text-align: center;
+  padding: .1rem .05rem;
+}
+#main .product-list .mui-card-content .product img {
+  width: 100%;
+}
+#main .product-list .mui-card-content .product .product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }

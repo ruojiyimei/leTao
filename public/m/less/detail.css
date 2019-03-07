@@ -130,13 +130,30 @@ img {
 #main {
   background-color: #fff;
 }
-#main .search-history .mui-card-header span {
-  font-size: .14rem;
+#main #detail-list .product-price span {
+  color: red;
+  font-weight: 600;
 }
-#main .search-history .mui-card-header a {
-  font-size: .14rem;
-  color: #666;
+#main #detail-list .product-price del {
+  color: #ccc;
 }
-#main .search-history .mui-card-header .mui-table-view-cell:after {
-  left: 0;
+#main #detail-list .product-size {
+  line-height: .33rem;
+}
+#main #detail-list .product-size span .mui-btn {
+  margin-bottom: .05rem;
+}
+#footer {
+  background-color: #ccc;
+  height: .45rem;
+}
+#footer .fa-shopping-cart {
+  color: #333;
+  font-size: .2rem;
+}
+#footer .mui-row > .mui-col-xs-5 {
+  padding: 0.06rem .05rem;
+}
+#footer .mui-row > .mui-col-xs-5 button {
+  width: 100%;
 }
